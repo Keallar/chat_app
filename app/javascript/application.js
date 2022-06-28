@@ -4,7 +4,7 @@ import "controllers"
 import "./src/jquery"
 import "semantic-ui"
 
-$(document).ready(function(){
+$(document).on('DOMContentLoaded', function(){
   $('.ui.dropdown').dropdown();
 
   $('.message .close').on('click', function() {

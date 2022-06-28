@@ -8,4 +8,4 @@ import { createConsumer } from "@rails/actioncable"
     window.App.cable = ActionCable.createConsumer();
 }).call(this)
 
-export default createConsumer()
+export default createConsumer('http://localhost:3000/cable')

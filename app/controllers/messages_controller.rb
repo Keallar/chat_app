@@ -6,12 +6,12 @@ class MessagesController < ApplicationController
   end
 
   def create
-    message = current_user.messages.new(message_params)
+    message = current_user.messages.build(message_params)
     if message.save
       ActionCable.server.broadcast('chatroom_channel',
-                                   { body: message_render(message) })
+                                   body: message_render(message))
     else
-      flash[:error] = "Something went wrong"
+      flash[:error] = 'Something went wrong'
     end
   end
 
