@@ -5,7 +5,7 @@ import "./src/jquery"
 import "semantic-ui"
 import 'channels'
 
-$(document).on('DOMContentLoaded', function(){
+$(document).on('turbo:load', function(){
   $('.ui.dropdown').dropdown();
 
   $('.message .close').on('click', function() {
