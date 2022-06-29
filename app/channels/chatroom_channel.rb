@@ -8,6 +8,6 @@ class ChatroomChannel < ApplicationCable::Channel
   end
 
   def receive(data)
-    puts data['message']
+    puts data['body']
   end
 end

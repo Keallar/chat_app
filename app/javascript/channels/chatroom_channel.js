@@ -1,8 +1,8 @@
-import consumer from "./consumer"
+import consumer from "channels/consumer"
 
-const chatroomChannel = consumer.subscriptions.create({ channel: "ChatroomChannel" }, {
+consumer.subscriptions.create("ChatroomChannel", {
   connected() {
-    console.log('Connected', this)
+    console.log('Connected')
   },
 
   disconnected() {

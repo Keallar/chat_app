@@ -3,6 +3,7 @@ import "@hotwired/turbo-rails"
 import "controllers"
 import "./src/jquery"
 import "semantic-ui"
+import 'channels'
 
 $(document).on('DOMContentLoaded', function(){
   $('.ui.dropdown').dropdown();

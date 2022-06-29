@@ -3,9 +3,4 @@
 
 import { createConsumer } from "@rails/actioncable"
 
-(function() {
-    window.App || (window.App = {});
-    window.App.cable = ActionCable.createConsumer();
-}).call(this)
-
-export default createConsumer('http://localhost:3000/cable')
+export default createConsumer()
